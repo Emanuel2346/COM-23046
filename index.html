@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>T.P.JS INTEGRADOR</title>
+</head>
+
+<header>
+    <nav class="navegacion">
+        <nav class="navbar bg-body-tertiary" style="display:inline">
+            <div class="container-fluid" style="background-color: rgb(78, 76, 76);">
+                <a class="navbar-brand" href="">
+                    <h4>
+                        <text style="color: white; margin: 35%;">Conf Bs As</text>
+                    </h4>
+
+
+                    <nav style="margin-right: 10%;">
+                        <h5>
+                            <div class="row">
+                                <div class="col" style="color:  gray">
+                                    La conferencia
+                                </div>
+                                <div class="col" style="color: gray;">
+                                    Los oradores
+                                </div>
+                                <div class="col" style="color: grey;">
+                                    El lugar y la fecha
+                                </div>
+                                <div class="col" style="color:  white;">
+                                    Conviertete en orador
+                                </div>
+                                <div class="col" style="color: rgba(7, 216, 59, 0.986);">
+                                    Comprar tickets
+                                </div>
+                            </div>
+                </a>
+                </h5>
+        </nav>
+
+</header>
+
+<body>
+    <br>
+    <main>
+        <div class="container" style="display:grid;align-items: center;">
+            <div class="card-group" style="margin: auto;">
+                <div class="card-body" style="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header__texto">
+                                <div class="card border-primary h-100" style="width: 15rem;">
+                                    <div class="card-body">
+                                        <h3 id="heading" class="card-title" style="text-align: center;">Estudiante</h3>
+                                        <p class="card-text" style="text-align: center;">Tienen un descuento </p>
+                                        <h5 class="card-text" style="text-align: center;"><b>80%</b></h5>
+                                        <p class="card-text" style="text-align: center;">* presentar documentación</p>
+                                    </div>
+                                    <div class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-primary h-100" style="width: 15rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="text-align: center;">Trainee</h3>
+                                    <p class="card-text" style="text-align: center;">Tienen un descuento </p>
+                                    <h5 class="card-text" style="text-align: center;"><b>50%</b></h5>
+                                    <p class="card-text" style="text-align: center;">* presentar documentación</p>
+                                </div>
+                                <div class="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-warning h-100" style="width: 15rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="text-align: center;">Junior</h3>
+                                    <p class="card-text" style="text-align: center;">Tienen un descuento </p>
+                                    <h5 class="card-text" style="text-align: center;"><b>15%</b></h5>
+                                    <p class="card-text" style="text-align: center;">* presentar documentación</p>
+                                </div>
+                                <div class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        VENTA
+                    </div>
+                    <H1>
+                        <div class="text-center">
+                            VALOR DE TICKET $200
+                        </div>
+                    </H1>
+                    <div id="formulariocompra" class="formcompra">
+                        <div class="" style="display: flex">
+                            <div style="display:grid;align-items;width:100%;padding: 6px;padding-top: 3%;">
+                                <input type="text" id="enombre" placeholder="Nombre" formControlName="nombre" />
+                            
+                        </div>
+    
+                            <div style="display:grid;align-items;width:100%;padding: 6px; padding-top: 3%;">
+                                <input type="text" id="eapellido" placeholder="Apellido" formControlName="apellido" />
+                            </div>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Correo">
+                        </div>
+
+                        <div  style="display: flex;align-items: center;">
+                            <div style="width: 100%;">
+                                <label>Cantidad:</label>
+                                <div style="display:grid;align-items;width:100%;padding: 6px;padding-top: 3%;">
+                                    <input type="number" id="cantidad" placeholder="Cantidad"
+                                        formControlName="cantidad" />
+                                </div>
+                            </div>
+
+                            <div style="width: 100%;">
+                                <label for="opciones"> Categoria:</label>
+                                <div class="" style="display: flex;align-items: center;">
+                                    <div style="display:grid;align-items;width:100%;padding:6px;padding-top: 3%;">
+                                        <select id="opciones" style="width: 100%;padding: 2.5px;">
+                                            <option value="80">ESTUDUANTE</option>
+                                            <option value="50">TRAINEE</option>
+                                            <option value="15">JUNOR</option>
+                                        </select>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <br>
+                    <div class="form-floating mb-3">
+                        <div class="mb-3" style="background-color: lightblue;border-radius: 8px;">
+                            <p id="Total" style="font-size: 20px; margin-left: 8px;"></p>
+                            <!--Hacer una funcion que de acuerdo a los valores = cantidad * 200 *(selector de opciones) 0.8 / 0.5 / 0.15 -->
+                        </div>
+                        <div>
+                        <input type="calculo" class="form-control" 
+                         id="floatingInput" placeholder="Total a Pagar en $:"
+                         type="submit" onclick="calcularTotal2()" value="Total a Pagar en $:"
+                         style="background-color: rgb(201, 229, 240);color: blue;"Total a Pagar en $:>
+                        </div>
+                    </div>
+                    
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-XXL-center;">
+                        <button class="btn btn btn-lg col d-grid gap-2 d-md-flex justify-content-xxl-center"
+                            type="submit" onclick="calcularTotal2()" value="Borrar"
+                            style="background-color: rgb(149, 218, 46); color:white;">Borrar</button>
+                        <button class="btn btn-lg col" type="submit" onclick="calcularTotal2()" value="Resumen"
+                            style="background-color: rgb(149, 218, 46);color: white;">Resumen</button>
+                    </div>
+
+    </main>
+    <br>
+    <footer class="footer">
+        <nav class="navegacion">
+            <div class="container-fluid" style="background-color: rgba(7, 46, 90, 0.829);">
+                <a class="navbar-brand" href="">
+
+                    <nav class="navegacion" style="margin-right:0%; padding: 2rem;">
+
+                        <div class="row">
+                            <a href="" class="col" style="color:  white; text-decoration: none;">
+                                Preguntas
+                                <br>
+                                Frecuentes
+                            </a>
+                            <a href="" class="col" style="color:  white; text-decoration: none;">
+                                Contáctanos
+                            </a>
+                            <a href="" class="col" style="color: white; text-decoration: none;">
+                                Prensa
+                            </a>
+                            <a href="" class="col" style="color: white; text-decoration: none;">
+                                Conferencia
+                            </a>
+                            <a href="" class="col" style="color: white; text-decoration: none;">
+                                Términos y
+                                <br>
+                                condiciones
+                            </a>
+                            <a href="" class="col" style="color: white; text-decoration: none;">
+                                Privacidad
+                            </a>
+                            <a href="" class="col" style="color: white; text-decoration: none;">
+                                Estudiantes
+                            </a>
+                        </div>
+                </a>
+        </nav>
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
